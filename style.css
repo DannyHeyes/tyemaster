@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap");
+
+:root {
+  --main-orange: #f16718;
+  --active-orange: #ff9b62;
+  --heading-blue: #162542;
+  --font-blue: #7b8bad;
+  --light-gray: #e8eff2;
+}
+
+body {
+  font-family: "Barlow";
+
+  box-sizing: border-box;
+  margin: 0 24px;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 24px auto;
+}
+
+main {
+  position: relative;
+  height: 681px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--heading-blue);
+
+  width: 327px;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--heading-blue);
+  width: 250px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--heading-blue);
+  width: 200px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+h4 {
+  color: var(--font-blue);
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline;
+  margin-left: 25px;
+}
+
+p {
+  color: var(--font-blue);
+  line-height: 1.4;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  height: 300px;
+  width: 327px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card img {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.card p {
+  text-align: center;
+}
+
+.main__div {
+  width: 327px;
+  margin: 0 auto;
+}
+
+.heading__content {
+  margin: 32px auto;
+  width: 327px;
+}
+
+.img-div {
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.gallery {
+  height: 195px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.img-div--hero {
+  height: 331px;
+  width: 371px;
+  background-image: url("./assets/mobile/image-keyboard.jpg");
+
+  position: absolute;
+  right: -48px;
+  bottom: 10px;
+}
+
+.img-div--red {
+  height: 193px;
+  width: 129px;
+  background-image: url("./assets/mobile/image-phone-and-keyboard.jpg");
+  position: absolute;
+  left: -46px;
+}
+
+.img-div--desk {
+  height: 193px;
+  width: 220px;
+  background-image: url("./assets/mobile/image-glass-and-keyboard.jpg");
+  position: absolute;
+  left: 105px;
+}
+
+.btn {
+  height: 48px;
+  padding: 0 14px;
+
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 8px;
+  outline: none;
+
+  font-family: inherit;
+}
+
+.btn--orange {
+  background-color: var(--main-orange);
+  color: #fff;
+  display: inline;
+}
+
+.btn--orange:hover {
+  background-color: var(--active-orange);
+}
+
+.btn--gray {
+  background-color: var(--light-gray);
+  color: var(--heading-blue);
+}
+
+.btn--gray:hover {
+  background-color: var(--heading-blue);
+  color: var(--light-gray);
+}
+
+.section__two {
+  margin: 80px auto;
+}
+
+.text__content {
+  width: 327px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 40px;
+    max-width: 700px;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    height: 425px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .main__div {
+    width: 340px;
+    margin: unset;
+  }
+
+  .gallery {
+    grid-template-columns: 30% 70%;
+    height: 320px;
+    max-width: 700px;
+  }
+
+  .section__two {
+    display: flex;
+    max-width: 700px;
+    margin: 80px 0;
+  }
+
+  .text__content {
+    width: 398px;
+    text-align: left;
+  }
+
+  .card-section {
+    gap: 20px;
+  }
+
+  .card {
+    align-items: flex-start;
+  }
+
+  .card img {
+    margin: unset;
+  }
+
+  .card p {
+    text-align: left;
+  }
+
+  .img-div--hero {
+    width: 478px;
+    height: 425px;
+
+    background-image: url("./assets/tablet/image-keyboard.jpg");
+    right: -157px;
+    bottom: unset;
+  }
+
+  .img-div--red {
+    width: 214px;
+    height: 320px;
+
+    background-image: url("./assets/tablet/image-phone-and-keyboard.jpg");
+    position: unset;
+  }
+
+  .img-div--desk {
+    width: 445px;
+    height: 320px;
+
+    background-image: url("./assets/tablet/image-glass-and-keyboard.jpg");
+    position: unset;
+
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0 80px;
+    max-width: 1100px;
+  }
+
+  .img-div--hero {
+    right: 0;
+  }
+
+  .card {
+    width: 255px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 0 auto;
+  }
+
+  main {
+    height: 480px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .img-div {
+    height: 480px;
+  }
+
+  .gallery {
+    height: 480px;
+    width: 730px;
+
+    display: inline-flex;
+  }
+
+  .img-div--hero {
+    width: 540px;
+    background-image: url("./assets/desktop/image-keyboard.jpg");
+  }
+
+  .img-div--red {
+    width: 255px;
+    background-image: url("./assets/desktop/image-phone-and-keyboard.jpg");
+  }
+
+  .img-div--desk {
+    width: 455px;
+    background-image: url("./assets/desktop/image-glass-and-keyboard.jpg");
+  }
+
+  .section__two {
+    width: 255px;
+    height: 265px;
+    display: inline-block;
+
+    margin: 50px 55px;
+  }
+
+  .text__content {
+    width: 255px;
+    font-size: 16px;
+  }
+
+  .card-section {
+    margin: 50px 0;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
